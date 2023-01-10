@@ -242,7 +242,7 @@ a {
 
 .opening-section {
     background-color: var(--purple);
-    padding: 108px 0 64px 0;
+    padding: 0 0 64px 0;
 }
 
 .opening-container {
@@ -277,6 +277,7 @@ a {
 }
 
 .girl-img {
+    padding-top: 136px;
     max-width: 416px;
 }
 
@@ -288,7 +289,7 @@ a {
 .girl-text {
     padding-top: 56px;
     line-height: 30px;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .boy-img {
@@ -319,6 +320,87 @@ a {
     height: 55px;
     margin: 0 auto;
 }
+
+/****** MEDIQUERY OPENING ******/
+
+/*** MEDIQUERY TABLET ***/
+
+@media only screen and (max-width: 809px) {
+
+    .opening-row {
+        flex-wrap: wrap;
+        gap: 36px;
+    }
+
+    .opening-col {
+        flex-basis: 100%;
+        padding: 0 34px;
+    }
+
+    .girl-title {
+        font-size: 60px;
+    }
+
+    .girl-text {
+        font-size: 18px;
+    }
+
+    .girl-img {
+        padding-top: 136px;
+        max-width: 696px;
+        margin: 0 auto;
+    }
+
+    .boy-title {
+        font-size: 20px;
+    }
+
+    .boy-text {
+        font-size: 18px;
+    }
+
+    .boy-img {
+        max-width: 530px;
+    }
+}
+
+/*** MEDIQUERY MOBILE ***/
+
+@media only screen and (max-width: 374px) {
+
+    .opening-row {
+        flex-wrap: wrap;
+        gap: 32px;
+    }
+
+    .opening-col {
+        flex-basis: 100%;
+        padding: 0 34px;
+    }
+
+    .girl-img {
+        margin: 0 auto;
+    }
+
+    .girl-title {
+        padding-top: 86px;
+        font-size: 30px;
+    }
+    
+    .girl-text {
+        font-size: 16px;
+    }
+
+    .boy-title {
+        font-size: 20px;
+    }
+
+    .boy-text {
+        font-size: 18px;
+    }
+}
+
+/**************** /OPENING ****************/
 
 /**************** DEBUG ****************/
 
