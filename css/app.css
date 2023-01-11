@@ -745,6 +745,109 @@ a {
 
 /**************** /ABOUT US ****************/
 
+/**************** OUTRO ****************/
+
+.outro-section {
+    padding: 58px 0;
+    background-color: var(--purple);
+}
+
+.outro-container  {
+    max-width: 580px;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+}
+
+.outro__opening {
+    font-weight: 300;
+    font-size: 20px;
+    margin-bottom: 34px;
+}
+
+.outro__subtitle {
+    font-size: 42px;
+    margin-bottom: 60px;
+}
+
+.outro__title {
+    font-size: 66px;
+    color: var(--yellow);
+    margin-bottom: 54px;
+}
+
+.outro__text {
+    font-size: 22px;
+    margin-bottom: 40px;
+    font-weight: 300;
+}
+
+.outro__button {
+    font-size: 24px;
+    font-weight: bold;
+    background-color: white;
+    color: var(--purple);
+    padding: 24px 82px;
+    border-radius: 40px;
+}
+
+.outro__copyright {
+    font-weight: 300;
+    font-size: 18px;
+    margin-top: 60px;
+}
+
+.privacy-policy {
+    text-decoration: underline;
+}
+
+/****** MEDIQUERY ABOUTUS ******/
+
+/*** MEDIQUERY TABLET ***/
+
+@media only screen and (max-width: 809px) {
+
+    .outro-container {
+        padding: 0 34px;
+    }
+
+    .outro__opening {
+        font-size: 24px;
+    }
+
+    .outro__subtitle {
+        font-size: 40px;
+    }
+
+    .outro__title {
+        font-size: 70px;
+    }
+
+    .outro__text {
+        font-size: 20px;
+    }
+
+    .outro__button {
+        font-size: 20px;
+    }
+}
+
+/*** MEDIQUERY MOBILE ***/
+
+@media only screen and (max-width: 374px) {
+
+    .outro__subtitle {
+        font-size: 28px;
+    }
+
+    .outro__title {
+        font-size: 46px;
+    }
+
+}
+
+/**************** /OUTRO ****************/
+
 /**************** DEBUG ****************/
 
 /* .debug .cards-row {
