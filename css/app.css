@@ -117,7 +117,9 @@ a {
         display: none;
     }
 }
-/**************** /HEADER ****************/
+/********************* /HEADER *********************/
+
+/********************* MAIN *********************/
 
 /**************** HERO ****************/
 
@@ -801,7 +803,7 @@ a {
     text-decoration: underline;
 }
 
-/****** MEDIQUERY ABOUTUS ******/
+/****** MEDIQUERY OUTRO ******/
 
 /*** MEDIQUERY TABLET ***/
 
@@ -847,6 +849,51 @@ a {
 }
 
 /**************** /OUTRO ****************/
+
+/********************* /MAIN *********************/
+
+/********************* FOOTER *********************/
+
+.footer-section {
+    background-color: var(--dark);
+    padding: 42px 0;
+}
+
+.footer-container {
+    max-width: 460px;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.closing-text {
+    margin-bottom: 70px;
+}
+
+.reference-links {
+    text-decoration: underline;
+    color: var(--purple);
+}
+
+/****** MEDIQUERY FOOTER ******/
+
+/*** MEDIQUERY TABLET ***/
+
+@media only screen and (max-width: 809px) {
+
+    .footer-container {
+        padding: 0 34px;
+    }
+}
+
+/*** MEDIQUERY MOBILE ***/
+
+@media only screen and (max-width: 374px) {
+    
+}
+/********************* /FOOTER *********************/
 
 /**************** DEBUG ****************/
 
