@@ -258,11 +258,6 @@ a {
 
 .opening-col {
     flex-basis: 50%;
-    align-items: flex-end;
-}
-
-.op-2 {
-    padding-top: 40px;
 }
 
 .plan-a {
@@ -282,12 +277,12 @@ a {
 }
 
 .girl-title {
-    padding-top: 136px;
+    margin-top: 136px;
     font-size: 36px;
 }
 
 .girl-text {
-    padding-top: 56px;
+    margin-top: 56px;
     line-height: 30px;
     font-size: 18px;
 }
@@ -298,13 +293,13 @@ a {
 }
 
 .boy-title {
-    padding-top: 28px;
+    margin-top: 28px;
     font-size: 28px;
 }
 
 .boy-text {
-    padding-top: 28px;
-    padding-bottom: 36px;
+    margin-top: 28px;
+    margin-bottom: 36px;
     font-style: italic;
     font-size: 20px;
     line-height: 30px;
@@ -383,7 +378,6 @@ a {
     }
 
     .girl-title {
-        padding-top: 86px;
         font-size: 30px;
     }
     
@@ -401,6 +395,153 @@ a {
 }
 
 /**************** /OPENING ****************/
+
+/**************** PARTNERS ****************/
+
+.partners-section {
+    padding: 64px 0 110px 0;
+}
+
+.partners-intro {
+    text-align: center;
+    padding: 0 24px 52px 24px;
+}
+
+.intro-subtitle {
+    font-size: 22px;
+    margin-bottom: 42px;
+}
+
+.intro-quote-title {
+    font-size: 36px;
+    margin-bottom: 54px;
+    color: var(--purple);
+}
+
+.intro-text {
+    font-size: 20px;
+}
+
+.partners-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.partners-col {
+    display: flex;
+    flex-basis: 100%;
+    padding: 40px 16px;
+    gap: 34px;
+}
+
+.partners-col--style {
+    background-color: var(--purple);
+    border-radius: 40px;
+}
+
+.partners-card {
+    flex-basis: calc(100% * (4/12));
+}
+
+.partners-card-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.partners-desc {
+    flex-basis: calc(100 * (8/12));
+    padding: 30px 0;
+    color: white;
+}
+
+.partners-desc-text {
+    line-height: 34px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.partners-desc-name {
+    font-size: 26px;
+    padding-top: 34px;
+}
+
+.partners-desc > [class^='fa-quote'] {
+    color: white;
+    font-size: 20px;
+}
+
+.man-1-img {
+    background-image: url(../img/testimonial1.jpg);
+}
+
+.woman-img {
+    background-image: url(../img/testimonial2.jpg);
+}
+
+.man-2-img {
+    background-image: url(../img/testimonial3.jpg);
+}
+
+/****** MEDIQUERY PARTNERS ******/
+
+/*** MEDIQUERY TABLET ***/
+
+@media only screen and (max-width: 809px) {
+
+    .intro-subtitle {
+        font-size: 18px;
+    }
+
+    .partners-row {
+        padding: 0 34px;
+    }
+
+    .partners-desc-text {
+        font-size: 18px;
+    }
+
+    .partners-desc-name {
+        font-size: 20px;
+    }
+}
+
+/*** MEDIQUERY MOBILE ***/
+
+@media only screen and (max-width: 374px) {
+
+    .intro-quote-title {
+        font-size: 28px;
+    }
+
+    .partners-col {
+        flex-wrap: wrap;
+        flex-basis: 100%;
+        gap: 18px;
+    }
+
+    .partners-card {
+        margin: 0 auto;
+    }
+
+    .partners-desc {
+        padding: 0;
+    }
+
+    .partners-desc-text {
+        text-align: center;
+    }
+
+    .partners-desc-name {
+        text-align: center;
+    }
+}
+
+/**************** /PARTNERS ****************/
 
 /**************** DEBUG ****************/
 
