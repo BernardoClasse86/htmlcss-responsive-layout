@@ -647,6 +647,104 @@ a {
 
 /**************** /BENEFITS ****************/
 
+/**************** ABOUT US ****************/
+.aboutus-section {
+    padding: 96px 0 154px 0;
+}
+
+.aboutus-container {
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.aboutus-row {
+    display: flex;
+    gap: 100px;
+}
+
+.aboutus-col {
+    flex-grow: 1;
+}
+
+.aboutus-desc__title {
+    font-size: 60px;
+    color: var(--purple);
+}
+
+.aboutus-desc__text {
+    font-size: 20px;
+    margin-top: 60px;
+}
+
+.aboutus-card {
+    position: relative;
+}
+
+.quotation-marks {
+    position: absolute;
+    font-size: 76px;
+    color: var(--purple);
+    top: -40px;
+    right: -10px;
+}
+
+.aboutus-card__subtitle {
+    font-size: 24px;
+    color: var(--purple);
+    margin: 28px 0;
+}
+
+.aboutus-card__button {
+    background-color: var(--purple);
+    color: white;
+    padding: 8px 16px;
+}
+
+.quote-author-img {
+    background-image: url(../img/about.jpg);
+}
+
+/****** MEDIQUERY ABOUTUS ******/
+
+/*** MEDIQUERY TABLET ***/
+
+@media only screen and (max-width: 809px) {
+
+    .aboutus-row {
+        padding: 0 34px;
+    }
+
+    .aboutus-desc__title {
+        font-size: 56px;
+    }
+
+}
+
+/*** MEDIQUERY MOBILE ***/
+
+@media only screen and (max-width: 374px) {
+
+    .aboutus-section {
+        padding-bottom: 80px;
+    }
+
+    .aboutus-row {
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+
+    .aboutus-col {
+        flex-basis: 100%;
+    }
+
+    .aboutus-card {
+        max-width: 200px;
+    }
+    
+}
+
+/**************** /ABOUT US ****************/
+
 /**************** DEBUG ****************/
 
 /* .debug .cards-row {
