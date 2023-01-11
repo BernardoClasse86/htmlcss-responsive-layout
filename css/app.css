@@ -746,7 +746,11 @@ a {
         gap: 50px;
     }
 
-    .aboutus-col {
+    .aboutus-col-8 {
+        flex-basis: 100%;
+    }
+
+    .aboutus-col-3 {
         flex-basis: 100%;
     }
 
