@@ -9,7 +9,7 @@ html {
 }
 
 img {
-    width: 100%;
+    max-width: 100%;
 }
 
 :root {
@@ -50,7 +50,7 @@ a {
     color: white;
     background-color: var(--blue);
     line-height: 46px;
-    padding: 7px 52px;
+    padding: 8px 42px;
 }
 
 .button--purple {
@@ -145,7 +145,6 @@ a {
 .col-card-3 {
     flex-basis: calc(100% * (1/3) - 52px / 3);
     text-align: center;
-    padding-bottom: 36px;
 }
 
 .cards-col-row {
@@ -165,7 +164,7 @@ a {
 }
 
 .card-body-title {
-    padding-bottom: 36px;
+    margin-bottom: 36px;
     font-size: 24px;
     color: var(--blue);
 }
@@ -178,13 +177,13 @@ a {
 }
 
 .card-button {
-    padding: 36px 0;
+    margin: 36px 0;
     font-size: 22px;
 }
 
 .cards-icon {
     font-size: 62px;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
     color: var(--blue);
 }
 
@@ -218,6 +217,10 @@ a {
         padding-top: 38px;
     }
 
+    .button--blue {
+        padding: 8px 10px;
+    }
+
 }
 
 /*** MEDIQUERY MOBILE ***/
@@ -243,6 +246,10 @@ a {
         padding-top: 38px;
     }
 
+    .button--blue {
+        padding: 6px 16px;
+    }
+
 }
 
 /**************** /HERO ****************/
@@ -257,6 +264,7 @@ a {
 .opening-container {
     max-width: 890px;
     margin: 0 auto;
+    padding: 0 34px;
 }
 
 .opening-row {
@@ -277,7 +285,7 @@ a {
     background-color: white;
     border-radius: 50px;
     text-align: center;
-    padding: 34px 36px 30px;
+    padding: 34px 30px;
 }
 
 .girl-img {
@@ -297,7 +305,7 @@ a {
 }
 
 .boy-img {
-    max-width: 220px;
+    max-width: 70%;
     margin: 0 auto;
 }
 
@@ -331,6 +339,10 @@ a {
 
 @media only screen and (max-width: 809px) {
 
+    .opening-container {
+        padding: 0 34px;
+    }
+
     .opening-row {
         flex-wrap: wrap;
         gap: 36px;
@@ -338,7 +350,6 @@ a {
 
     .opening-col {
         flex-basis: 100%;
-        padding: 0 34px;
     }
 
     .girl-title {
@@ -350,7 +361,7 @@ a {
     }
 
     .girl-img {
-        padding-top: 136px;
+        margin-top: 136px;
         max-width: 696px;
         margin: 0 auto;
     }
@@ -379,7 +390,6 @@ a {
 
     .opening-col {
         flex-basis: 100%;
-        padding: 0 34px;
     }
 
     .girl-img {
@@ -401,6 +411,10 @@ a {
     .boy-text {
         font-size: 18px;
     }
+
+    .plan-b {
+        padding: 34px 16px;
+    }
 }
 
 /**************** /OPENING ****************/
@@ -411,9 +425,15 @@ a {
     padding: 64px 0 110px 0;
 }
 
+.partners-container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 34px;
+}
+
 .partners-intro {
     text-align: center;
-    padding: 0 24px 52px 24px;
+    margin-bottom: 52px;
 }
 
 .intro-subtitle {
@@ -440,31 +460,29 @@ a {
 .partners-col {
     display: flex;
     flex-basis: 100%;
-    padding: 40px 16px;
+    padding: 32px 48px 32px 16px;
     gap: 34px;
 }
 
 .partners-col--style {
     background-color: var(--purple);
-    border-radius: 40px;
+    border-radius: 50px;
 }
 
 .partners-card {
-    flex-basis: calc(100% * (4/12));
+    flex-basis: calc(100% * (2/12));
 }
 
 .partners-card-img {
-    width: 200px;
-    height: 200px;
     border-radius: 50%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: center;
 }
 
 .partners-desc {
-    flex-basis: calc(100 * (8/12));
-    padding: 30px 0;
+    flex-grow: 1;
+    margin: 30px 0;
     color: white;
 }
 
@@ -476,24 +494,12 @@ a {
 
 .partners-desc-name {
     font-size: 26px;
-    padding-top: 34px;
+    margin-top: 34px;
 }
 
 .partners-desc > [class^='fa-quote'] {
     color: white;
     font-size: 20px;
-}
-
-.man-1-img {
-    background-image: url(../img/testimonial1.jpg);
-}
-
-.woman-img {
-    background-image: url(../img/testimonial2.jpg);
-}
-
-.man-2-img {
-    background-image: url(../img/testimonial3.jpg);
 }
 
 /****** MEDIQUERY PARTNERS ******/
@@ -506,10 +512,6 @@ a {
         font-size: 18px;
     }
 
-    .partners-row {
-        padding: 0 34px;
-    }
-
     .partners-desc-text {
         font-size: 18px;
     }
@@ -517,6 +519,7 @@ a {
     .partners-desc-name {
         font-size: 20px;
     }
+
 }
 
 /*** MEDIQUERY MOBILE ***/
@@ -529,16 +532,14 @@ a {
 
     .partners-col {
         flex-wrap: wrap;
+        justify-content: center;
         flex-basis: 100%;
+        padding: 32px 16px;
         gap: 18px;
     }
 
-    .partners-card {
-        margin: 0 auto;
-    }
-
     .partners-desc {
-        padding: 0;
+        margin: 0;
     }
 
     .partners-desc-text {
@@ -557,6 +558,12 @@ a {
 .benefits-section {
     background-color: var(--purple);
     padding: 76px 0 64px 0;
+}
+
+.benefits-container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 34px;
 }
 
 .benefits-title {
@@ -613,10 +620,6 @@ a {
         font-size: 22px;
     }
 
-    .benefits-row {
-        padding: 0 34px;
-    }
-
     .benefits-col {
         flex-basis: calc(100% * (6/12) - 34px / 2);
     }
@@ -638,10 +641,6 @@ a {
         font-size: 20px;
     }
 
-    .benefits-row {
-        padding: 0 34px;
-    }
-
     .benefits-col {
         flex-basis: 100%;
     }
@@ -657,6 +656,7 @@ a {
 .aboutus-container {
     max-width: 1050px;
     margin: 0 auto;
+    padding: 0 34px;
 }
 
 .aboutus-row {
@@ -683,14 +683,14 @@ a {
 }
 
 .aboutus-card {
-    position: relative;
-    background-image: url(../img/about.jpg);
-    width: 200px;
-    height: 200px;
     border-radius: 50%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: center;
+}
+
+.quote-marks {
+    position: relative;
 }
 
 .quotation-marks {
@@ -713,9 +713,6 @@ a {
     padding: 8px 16px;
 }
 
-.quote-author-img {
-    background-image: url(../img/about.jpg);
-}
 
 /****** MEDIQUERY ABOUTUS ******/
 
@@ -723,12 +720,18 @@ a {
 
 @media only screen and (max-width: 809px) {
 
-    .aboutus-row {
-        padding: 0 34px;
-    }
-
     .aboutus-desc__title {
         font-size: 56px;
+    }
+
+    .aboutus-card__button {
+        background-color: var(--purple);
+        color: white;
+        padding: 8px 6px;
+    }
+
+    .quotation-marks {
+        right: 76px;
     }
 
 }
@@ -859,6 +862,10 @@ a {
 
     .outro__title {
         font-size: 46px;
+    }
+
+    .outro__button {
+        padding: 12px 24px;
     }
 
 }
